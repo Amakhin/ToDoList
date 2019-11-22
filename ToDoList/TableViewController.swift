@@ -27,8 +27,10 @@ class TableViewController: UITableViewController {
         
         let alertAction2 = UIAlertAction(title: "Create", style: .cancel) { (alert) in
             let newItem = alertController.textFields![0].text
+            if newItem != "" {
             addItem(nameItem: newItem!)
             self.tableView.reloadData()
+            }
         }
         
         alertController.addAction(alertAction1)
