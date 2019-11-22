@@ -38,6 +38,8 @@ class TableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.tableFooterView = UIView()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -114,6 +116,7 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+
 
     /*
     // Override to support conditional rearranging of the table view.
